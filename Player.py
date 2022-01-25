@@ -34,7 +34,14 @@ class Player():
     
     def generate_hand(self):
         self.hand = sorted([RNG.randint(1,6) for i in len(self.hand)])
+    
+    def check_for_trips_quads(self):
+        pass
 
     def choose_scoring(self):
+        if 5 not in self.hand or 1 not in self.hand:
+            if not self.check_for_trips_quads():
+                return 0
+
         for die in self.hand: #Choose which die to take if any.
-            if 
+            pass
