@@ -1,10 +1,13 @@
 import random
-import pandas
+import pandas as pd
 from Player import Player
 
 RNG = random.SystemRandom()
 SCORE_LIMIT = 10000
 NUM_PLAYERS = 5
+
+def generate_possibilities(num_dice):
+    pass
 
 def setup():
     players = []
