@@ -50,3 +50,7 @@ class Player():
 
         for die in self.hand: #Choose which die to take if any.
             pass
+
+
+    def take_turn(self, scores):
+        pass
